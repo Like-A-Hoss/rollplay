@@ -1,5 +1,7 @@
 import discord
 import random
+import os
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 class ik_dice():
     def __init__(self):
@@ -431,6 +433,6 @@ async def on_message(message):
 
         
 
-client.run('OTEyODc3ODM0MTk0ODA4ODYy.YZ2VvA.k6F2xpNqCmYbgwOwTC1d36soBLA')
+client.run('SECRET_KEY')
 
 
